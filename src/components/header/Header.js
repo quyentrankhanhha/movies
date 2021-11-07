@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../../assets/logo.jpeg'
 import './header.scss'
 
 const headerNav = [
@@ -43,7 +44,7 @@ const Header = () => {
     <div ref={headerRef} className='header'>
       <div className='header__wrap container'>
         <div className='logo'>
-          <img src='' alt='logo' />
+          <img src={logo} alt='logo' />
           <Link to='/'>TheMooovies</Link>
         </div>
         <ul className='header__nav'>
